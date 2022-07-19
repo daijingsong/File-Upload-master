@@ -1,0 +1,13 @@
+com\zq\service\Impl\UserFileServiceImpl.class
+com\zq\config\UserRealm.class
+com\zq\controller\UserFileController.class
+com\zq\FilesApplication.class
+com\zq\mapper\UserMapper.class
+com\zq\bean\UserFile.class
+com\zq\service\Impl\UserServiceImpl.class
+com\zq\bean\User.class
+com\zq\controller\UserController.class
+com\zq\config\ShiroConfig.class
+com\zq\service\UserService.class
+com\zq\service\UserFileService.class
+com\zq\mapper\UserFileMapper.class
