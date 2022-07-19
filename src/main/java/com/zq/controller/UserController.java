@@ -32,6 +32,7 @@ public class UserController {
         log.info("接收到的数据是username:{},password:{}",username,password);
         System.out.println("我是hotfix文件");
         System.out.println("我是master文件");
+        System.out.println("我是hotfix文件");
 
         //获取当前的用户
         Subject subject = SecurityUtils.getSubject();
