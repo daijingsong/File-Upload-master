@@ -31,6 +31,8 @@ public class UserController {
 
         log.info("接收到的数据是username:{},password:{}",username,password);
         System.out.println("123");
+        System.out.println("pull test");
+        
         //获取当前的用户
         Subject subject = SecurityUtils.getSubject();
 
