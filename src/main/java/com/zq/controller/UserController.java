@@ -1,5 +1,6 @@
 package com.zq.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
@@ -15,6 +16,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequestMapping("/user")
+@Slf4j
 public class UserController {
 
     @GetMapping
@@ -26,6 +28,8 @@ public class UserController {
     public String login(@RequestParam String username,
                         @RequestParam String password,
                         RedirectAttributes attributes) {
+
+        log.info("接收到的数据是username:{},password:{}",username,password);
 
         //获取当前的用户
         Subject subject = SecurityUtils.getSubject();
